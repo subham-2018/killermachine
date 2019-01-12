@@ -1,0 +1,20 @@
+initializing a private static website!
+
+get a domain name(iamsubham.xyz)
+get into the domain name (dns management) and modify the A record with yout public ip of your server.
+If you want to manage the dns by your own using AWS then use service route53 create a hosted zone over there using your domain name copy your (NS) type all the 4lines to the (DNS Management > Nameservers) and after that in route53 inside the hosted zone modify the A records with the public ip of your Server.
+
+In Terminal what to do for a statis website?
+
+create a linux server in Aws
+> sudo apt-get update
+> sudo apt-get install apache2
+> find the location where Apache2 is installed
+> cd /var/www/html
+> ls
+> inside html you will get a index.html file so first backup the folder present (cp index.html index_backup.html)
+> As the codes for the website would be avilabe by the devloper in the git-hub so just clone the content from over there which would be in a zip format
+> to unzip the file you need to install unzipper service (sudo apt-get install unzip)
+> unzip (name of the zip file)
+> After unzip you need to copy those extracted files to (/var/www/html) so we need to use the cmnd (cp * -d /var/www/html)
+> After that we need to modify two files if we need to change anything in the website that is nano (Index.html & contact.html) 

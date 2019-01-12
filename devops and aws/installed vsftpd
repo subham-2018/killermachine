@@ -1,0 +1,19 @@
+installed vsftpd
+changed anony to no
+restarted vsftp
+tried connecting from terminal using the command " ftp <server_IP>"
+login got dclined. 
+Edited security rules from aws console under options "Security Groups". 
+created a user subham and gave it a new passwrd. since it is a new user the document root will be /home/subham. I created a file under /home/subham/ 
+tried connecting and it got connected but it was not listing the files under the path. 
+so i added a few rules in vsftpd.conf
+	pasv_enable=YES
+    pasv_min_port=1024
+	pasv_max_port=1048
+	pasv_address=<Public IP of your instance> 
+i tried connecting again and it gave me anther error. 
+so iadded a new value in vsftpd.con "pasv_promiscuous=YES"
+it worked correctly after that.
+
+
+Go to now terminal and use "ftp -p <server_IP"

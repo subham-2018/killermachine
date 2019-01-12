@@ -1,0 +1,11 @@
+Steps to install Docker?
+
+yum install yum-utils
+
+yum-config-manager --enable rhui-REGION-rhel-server-extras
+
+yum install docker -y
+
+service docker start
+
+

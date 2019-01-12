@@ -1,0 +1,27 @@
+ install jenkins using tomcat
+
+ 13  java -version
+
+ yum install java-1.8.0-openjdk.x86_64
+
+   15  wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz
+   16  tar -xvzf apache-tomcat-9.0.12.tar.gz -C /opt  
+    17 mv /opt/apache-tomcat-9.0.12/ /opt/tomcat
+   18  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+   19  cp -rv jenkins.war /opt/tomcat/webapps
+   20  cd /opt/tomcat/
+   21  ll
+   22  cd bin
+   23  ll
+   24  sh startup.sh 
+   25  
+
+   to change jenkins security using terminal we just need to do some changes on the config file and for this the given path is - ( vi /var/lib/jenkins/config.xml )
+
+http://mirrors.wuchna.com/apachemirror/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz
+
+http://redrockdigimark.com/apachemirror/tomcat/tomcat-7/v7.0.91/bin/apache-tomcat-7.0.91.tar.gz
+
+
+yum install java-1.7.0-openjdk
+

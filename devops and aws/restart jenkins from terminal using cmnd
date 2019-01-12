@@ -1,0 +1,12 @@
+restart jenkins from terminal using cmnd
+
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/restart
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/safeRestart
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/exit
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/safeExit
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/quietDown
+$ curl -X POST -u <user>:<password> http://<jenkins.server>/cancelQuietDown
+
+
+curl -X POST -u admin:1165056ecc8a54371b8c1fdf12806f84af http://18.207.220.217:8080/jenkins/restart
+

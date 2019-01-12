@@ -1,0 +1,24 @@
+How to start Jenkins on Docker Container..??
+
+Start and Stop Jenkins Container
+How to set Jenkins home on Docker Volume and Host Machine
+
+
+
+: docker pull jenkins
+
+: docker run -p 8080:8080 -p 50000:50000 jenkins
+
+: docker run --name MyJenkins -p 8080:8080 -p 50000:50000 -v /Users/subham/Desktop/Jenkins_Home:/var/jenkins_home jenkins
+
+: docker run --name MyJenkins2 -p 9090:8080 -p 50000:50000 -v /Users/subham/Desktop/Jenkins_Home:/var/jenkins_home jenkins
+
+: docker volume create myjenkins
+: docker volume ls
+: docker volume inspect myjenkins
+
+: docker run --name MyJenkins3 -p 9090:8080 -p 50000:50000 -v myjenkins:/var/jenkins_home jenkins
+
+: docker inspect MyJenkins3
+
+

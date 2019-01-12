@@ -1,0 +1,83 @@
+acm - certificate manager
+route53 -not done
+
+
+snapshot(it backups the volume of the instance)
+
+cloudtrail (it shows all the event History and you can also download a csv file for local)
+
+efs
+
+lambda (it gives us the ide to code and also run the code)
+
+Elastic beanstalk (its same as lambda but a older version)
+
+cloud 9 -(its just like a notepad we can only code here but cannot run the codes)
+
+codestar devtool
+codestar
+
+Iam
+
+aws secret manager
+
+cost explorer
+
+ops work (here you can launch a ec2 with any specific software like linux + nodejs but it is not visible) 
+
+sns
+cloud watch
+
+resizing volume
+
+auto scaling (launch configuration, auto scaling groups)
+
+ami(image-this the backup of the whole machine it is available inside thr ec2)
+
+S3 glacier(slower vault for backup)
+
+storage gateway
+
+load balancer(it is a hash function- the input given gives a particular output irrelevent of time)(it is not region specific)
+
+Amazon RDS (it transfers oracle sql data to amazon aws database it is very costly and we also should have the oracle id to access it)(in local machine we use ssms to download the oracle data)
+
+ACL(to block a certain IP)
+
+Internet Gateway(black hole)
+
+ACM (certificates are used to encrypy the traffic which has a start date and a end date it is region specific)
+
+AWS Direct Connect (doing a physical connection by going to the database centre)
+
+AWS Config (it backups all the S3 data for future use)
+
+Cloud Front (edge vertex)(to review the website globaly)(edge to edge location)
+ like we have to create a distribution of a website which is having it's original webservers in some regions so cloud front is used here to make your website globally available with high accuracy and latency so it has 51 edge locations all over the world which caches the data of the original webserver when you request for the 1'st time.
+
+{S3 IAM & Cloud Front these services are in global level no specific region}
+
+AWS Batch (it is automation of work)(we can create a job which aws can complete at a specific point of time like its a automation of any job like to create multiple fiders at a particular point of time or initializing any other job we can address that job on the aws batch and it will complete the job on it's given specific time by itself while doing the job it will intitialize instances as we will mention while adressing the job to the server)
+
+Amazon API Gateway (redirecting things to specific page)(like it uses the json swagger)(our work is only to give the sequrity groups the main job is of the json devlopers to write the codes in json for routing it)(ex -fb>fb/friends it will directly show you the friends page)(it consists of Get & post both are same but Get is more secure)
+
+(install these in the terminal{mongo db})
+(install {robo 3T} in the machine in local)
+
+ MFA(it is used to secure the aws account we have to download a google authenticator in our android phone) 
+
+ sns -firebase(it is used for appliation notification messages on your android or ios devices) 
+
+ cloud formation - it is the oldest version of lambda basically it provides environment same it creates a instance execute everything and gives a environment to work on)
+
+ Dynamo db - (it is a no sql database)
+
+aws kms- 
+
+Amazon Cognito -to create pool user for the client so that they can login to aws without acessing the root adminstration.Amazon Cognito provides authentication, authorization, and user management for your web and mobile apps. Your users can sign in directly with a user 
+name and password, or through a third party such as Facebook, Amazon, or Google.(food delivery apps where we create our id)
+
+
+VPC Peering - 
+
+ 

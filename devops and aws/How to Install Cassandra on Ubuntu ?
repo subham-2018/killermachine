@@ -1,0 +1,44 @@
+How to Install Cassandra on Ubuntu ?
+
+check wheather JAVA & PYTHON are available or not as python is pre-installed in ubuntu os we need to get JAVA.
+
+Installing JAVA!
+sudo add-apt-repository ppa:webupd8team/java
+
+sudo apt-get update
+
+sudo apt-get install oracle-java8-set-default
+
+java -version
+
+ Installing Apache Cassandra!
+ echo "deb http://www.apache.org/dist/cassandra/debian 36x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+
+ curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
+
+ sudo apt-get update
+
+ sudo apt-get install cassandra
+
+ nodetool status 
+
+ Connect with cqlsh!
+
+ cqlsh
+
+After Installing Cassandra we need to find it's location ?
+
+cd /etc/
+ls
+cd cassandra
+there you will find a file named as cassandra.yaml we need to backup this file
+> cp cassandra.yaml cassandra_backup.yaml
+
+Then we need to get into the Cassandra.yaml!
+> sudo nano cassandra.yaml
+
+After Editing the file we just need to restart the Cassandra & check the status wheather it's running or not?
+we have to change the config file with the Private IP (seed, rpc_address, listen_address)
+
+> sudo service cassandra restart
+> sudo service cassandra status 

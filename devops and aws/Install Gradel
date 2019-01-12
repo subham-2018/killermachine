@@ -1,0 +1,20 @@
+Install Gradel
+
+install latest java
+java -version
+
+Download Gradel Zip File
+wget https://services.gradle.org/distributions/gradle-3.4.1-bin.zip
+
+Install Gradel
+
+mkdir /opt/gradle
+unzip -d /opt/gradle gradle-3.4.1-bin.zip
+
+export PATH=$PATH:/opt/gradle/gradle-3.4.1/bin
+
+gradle -v
+
+
+how to build Gradel..?
+

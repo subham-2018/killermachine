@@ -1,0 +1,6 @@
+How to downgrade a jenkins version by command line
+
+First locate your jenkins.war file, most of time it is located in /usr/share/jenkins
+Rename jenkins.war to jenkins.war.old mv jenkins.war jenkins.war.old
+Get a version from jenkins example: http://updates.jenkins-ci.org/stable-2.32/latest/jenkins.war sudo wget http://updates.jenkins-ci.org/stable-2.32/latest/jenkins.war
+Now start or restart jenkins service sudo service jenkins restart

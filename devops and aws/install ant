@@ -1,0 +1,30 @@
+install ant
+
+step 1 -wget - latest ant version (tz war file)
+step 2 -then extract the file
+
+step 3 -mv apache-ant-1.9.4/ /opt/ant
+step 4 - create the symbolic link 
+        ln -s /opt/ant/bin/ant /usr/bin/ant
+
+step 5 - setup ant environment
+          vi /etc/profile.d/ant.sh
+  & then add the following lines
+     #!/bin/bash
+     ANT_HOME=/opt/ant
+     PATH=$ANT_HOME/bin:$PATH
+     export PATH ANT_HOME
+     export CLASSPATH=.
+
+step 6 -chmod +x /etc/profile.d/ant.sh
+
+step 7 -source /etc/profile.d/ant.sh
+
+ant -version        
+
+
+how to buils ant(buils.xml)file manually?
+ ant compile
+ ant jar
+ ant run
+
